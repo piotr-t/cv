@@ -1,0 +1,29 @@
+.contactConrainer{
+  h1{
+    margin:5vw;
+    font-size: 6vw;
+  }
+  .contactWrapper{
+    padding: 5vw 5vw 5vw 20vw;
+    font-size: 3vw;
+    color: white;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .formWrapper{
+    // background-color:beige;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    .input1, .input2{
+      margin-top:3vw;
+      width:40vw;
+      .input1__field, .input2__field{
+        width:100%;
+      }
+    }
+  }
+
+}

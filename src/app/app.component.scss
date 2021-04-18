@@ -1,0 +1,43 @@
+@keyframes animationArroww {
+  from {opacity:1;
+    transform: scale(1);}
+  to {opacity: 0;
+    transform: scale(1.5);
+    }
+}
+
+
+.articlesContainer{
+  background-color: brown;
+  height: 100vh;
+  width: 100vw;
+  margin:0px;
+  padding: 0px;
+  position: absolute;
+  top:0px;
+  left:0px;
+  .matIcon{
+    user-select: none;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    z-index: 101;
+    font-size: 5vw;
+    color:rgb(235, 224, 224);
+    cursor: pointer;
+    text-shadow: 5px 5px 5px rgb(87, 76, 76);
+    opacity:.9;
+    &:active{
+      transform: scale(1);
+      opacity:1;
+      animation-name: animationArroww;
+      animation-duration: .5s;
+    }
+    &:hover{
+      transform: scale(1.05);
+      color:rgb(231, 220, 220);
+      opacity: .8;
+
+    }
+  }
+}
