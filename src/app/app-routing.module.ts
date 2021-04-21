@@ -8,16 +8,16 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { SkilsComponent } from './skils/skils.component';
 
 const routes: Routes = [
-  {path: 'Home', component: HomeComponent},
+  {path: 'Home', component: HomeComponent, data: {hideUpArrow: true, hideDownArrow: false}},
   {path: 'Skils', component: SkilsComponent},
   {path: 'Article1', component: Article1Component},
-  {path: 'Contact', component: ContactComponent},
-  {path: '', redirectTo: 'Home' , pathMatch: 'full'},
-  {path: '**', component: NotFoundComponent}
+  {path: 'Contact', component: ContactComponent, data: {hideUpArrow: false, hideDownArrow: true}},
+  {path: '', redirectTo: 'Home' , pathMatch: 'full', data: {hideUpArrow: true, hideDownArrow: false}},
+  {path: '**', component: NotFoundComponent, data: {hideUpArrow: true, hideDownArrow: true}}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes,  { useHash: true })],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

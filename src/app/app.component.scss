@@ -1,3 +1,4 @@
+
 @keyframes animationArroww {
   from {opacity:1;
     transform: scale(1);}
@@ -16,28 +17,58 @@
   position: absolute;
   top:0px;
   left:0px;
-  .matIcon{
-    user-select: none;
+  .arrowContainer{
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     bottom: 10%;
-    right: 10%;
+    right: 5%;
     z-index: 101;
-    font-size: 5vw;
-    color:rgb(235, 224, 224);
-    cursor: pointer;
-    text-shadow: 5px 5px 5px rgb(87, 76, 76);
-    opacity:.9;
-    &:active{
-      transform: scale(1);
-      opacity:1;
-      animation-name: animationArroww;
-      animation-duration: .5s;
-    }
-    &:hover{
-      transform: scale(1.05);
-      color:rgb(231, 220, 220);
-      opacity: .8;
+    height: 20vh;
+    width: 10vw;
+    .arrowWrapper{
+      width: 10vw;
+      height: 20vh;
 
+      .matIcon, .matIcon__up{
+        //position: absolute;
+        user-select: none;
+        font-size: 5vw;
+        color:rgb(235, 224, 224);
+        cursor: pointer;
+
+        opacity:.9;
+
+      }
+      .matIcon__up{
+        transform: rotate(180deg);
+        transform-origin: 130% 180%;
+        text-shadow: -5px -5px 5px rgb(87, 76, 76);
+        &:hover{
+         // transform-origin: 50% 50%;
+          transform: rotate(180deg) scale(1.05);
+        }
+        &:active{
+          transform-origin: 130% 180%;
+          transform: rotate(180deg) scale(1);
+        }
+      }
+      .matIcon__down{
+        text-shadow: 5px 5px 5px rgb(87, 76, 76);
+        &:active{
+          transform: scale(1);
+          opacity:1;
+          animation-name: animationArroww;
+          animation-duration: .5s;
+        }
+        &:hover{
+          transform: scale(1.05);
+          color:rgb(231, 220, 220);
+          opacity: .8;
+        }
+      }
     }
   }
+
 }

@@ -30,7 +30,7 @@
      id="layer2" />
   <g
      transform="matrix(2.4218011,0,0,2.4218011,-11.013601,51.267416)"
-     style="display:inline;opacity:0.85789472"
+     style="display:inline;opacity:0.85789472;filter: drop-shadow( 1px 1px 1px rgba(0, 0, 0, .7))"
      id="layer3">
     <g
        style="opacity:0.99473685"

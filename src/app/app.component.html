@@ -1,10 +1,22 @@
 <div class="articlesContainer" [@startAnimation]>
-  <router-outlet (activate)='onActivate($event, myTemplateVar)' #myTemplateVar="outlet"></router-outlet>
-  <mat-icon
-  class="matIcon" aria-hidden="false" aria-label="Example home icon"
-  (click)="navToHome()"
-  *ngIf="!hideNav">
-    <span class="material-icons-outlined">arrow_drop_down_circle</span>
-  </mat-icon>
+  <router-outlet (activate)='onActivate($event, myTemplateVar)' #myTemplateVar="outlet" ></router-outlet>
+  <div class="arrowContainer">
+    <div class="arrowWrapper">
+      <mat-icon
+      class="matIcon matIcon__up" aria-hidden="false" aria-label="Example home icon"
+      (click)="navToHome()"
+      *ngIf="!hideNavUp">
+        <span class="material-icons-outlined">arrow_drop_down_circle</span>
+      </mat-icon>
+    </div>
+    <div class="arrowWrapper">
+      <mat-icon
+      class="matIcon matIcon__down" aria-hidden="false" aria-label=""
+      (click)="navToHome()"
+      *ngIf="!hideNavDown">
+        <span class="material-icons-outlined">arrow_drop_down_circle</span>
+      </mat-icon>
+    </div>
+  </div>
 </div>
 

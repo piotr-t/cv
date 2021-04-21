@@ -36,7 +36,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     MatFormFieldModule,
     MatInputModule
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],// 
   bootstrap: [AppComponent]
 })
 export class AppModule { }
