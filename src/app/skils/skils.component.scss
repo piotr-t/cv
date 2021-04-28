@@ -1,14 +1,11 @@
 .skilsContainer{
   h1{
-    padding:3vw;
+   // padding:3vw;
   }
-  .skilsWrapper{
-    margin:5vw;
     p{
       font-size:max(12px, 2vw);
       color:azure;
     }
-  }
   .cardsWrapper{
     display: flex;
     flex-direction: row;
