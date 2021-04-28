@@ -11,9 +11,6 @@ export class NotFoundComponent implements OnInit {
 timeTorRedirect = 1;
 
 
-
-
-
   constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {

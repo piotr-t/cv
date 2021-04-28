@@ -1,7 +1,35 @@
-<div class="pageNoFoundContainer">
-  <h1>Page not found</h1>
-  <div class="timerWrapper">{{timeTorRedirect}}</div>
-  <div class="waitWrapper">
-    <h3 class="wait">wait ... </h3><h3 class="redirect">to redirec to <span class="spanHome">Home</span> </h3>
+<div class="pageNoFoundContainer container-fluid h-100">
+<!--   <div class="row justify-content-center h-50 r1">
+    <h1>Page not found</h1>
+  </div>
+  <div class="row h-50 r2">
+    <div class="col-4 waitWrapper1">
+      <h3 class="wait">wait ... </h3>
+    </div>
+    <div class="col-4 timeContainer">
+      <div class="timerWrapper h-25">{{timeTorRedirect}}</div>
+    </div>
+    <div class="waitWrapper2 col-4">
+
+    </div>
+  </div> -->
+
+  <div class="row justify-content-center notFoundWrapper h-50 align-items-end">
+      <h1>Page not found</h1>
+  </div>
+  <div class="row waitTimeContainer h-50">
+    <div class="col-12 h-25 waitTimeWrapper">
+      <div class="row align-items-center h-100 waitTimeWrapper__row">
+        <div class="col-4 waitTimeWrapper__row--wait">
+          <h3 class="wait">wait ... </h3>
+        </div>
+        <div class="col-3 waitTimeWrapper__row--timer">
+          <h1>{{timeTorRedirect}}</h1>
+        </div>
+        <div class="col-5 waitTimeWrapper__row--redirect">
+          <h3 class="redirect">to redirec to <span class="spanHome">Home</span> </h3>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
