@@ -14,6 +14,10 @@ import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
 import { Article2Component } from './article2/article2.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
+import {MatButtonModule} from '@angular/material/button';
+import {MatDialogModule} from '@angular/material/dialog';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -34,9 +38,13 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     MatCardModule,
     MatIconModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    ReactiveFormsModule,
+    MatButtonModule,
+    MatDialogModule,
+    HttpClientModule,
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],// 
+  providers: [], //{provide: LocationStrategy, useClass: HashLocationStrategy}
   bootstrap: [AppComponent]
 })
 export class AppModule { }

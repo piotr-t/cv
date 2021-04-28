@@ -2,18 +2,31 @@
 
 
 .homeContainer{
+  height: 100%;
   text-align: center;
-  margin-top: 25vh;
-  h1, h2{
-    font-family: 'Bebas Neue', cursive;
-    color: rgb(155, 179, 148);
-    padding:0px;
-    margin: 0px;
+  background-image: url('~src/assets/startPhoto.jpg');
+  background-repeat: no-repeat;
+  background-position: contain;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .textWrapper{
+    background-color: rgba(152, 182, 182, 0.281);
+    h1, h2{
+      font-family: 'Bebas Neue', cursive;
+      color: rgb(156, 48, 48);
+      padding:0px;
+      margin: 0px;
+      opacity: 1;
+    }
+    h1{
+      font-size: 15vw;
+    }
+    h2{
+      font-size: 10vw;
+    }
   }
-  h1{
-    font-size: 15vw;
-  }
-  h2{
-    font-size: 10vw;
-  }
+
 }

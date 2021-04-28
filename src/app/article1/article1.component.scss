@@ -1,33 +1,22 @@
 .article1Container{
-  position: absolute;
-  height: 100%;
-  width: 100%;
   background-color: #424f64;
-  top: 0px;
-  left: 0px;
-  .rys1{
-    position: relative;
-    top:25vh;
-    left: 10vw;
-    width: 35vw;
-    opacity: .6;
-
-  }
-  .listWrapper{
-    width: 50%;
-
-    height:95%;
-    margin:0px 0px 0px 50%;
-    padding: 0px;
+  .row1{
+    .imgWrapper{
+      .rys1{
+        opacity: .6;
+      }
+    }
+    .listWrapper{
+      ul{
+        li{
+          color: white;
+          font-size: max(18px, 3vw);
+        }
+      }
+    }
   }
 }
-ul{
-  li{
-    margin-top: 2vh;
-    color: white;
-    font-size: 25px;
-  }
-}
+
 
 
 

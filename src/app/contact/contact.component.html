@@ -1,25 +1,87 @@
-<div class="contactConrainer">
-  <h1>Contact</h1>
-  <div class="contactWrapper">
-    <p>email: troc.piotr@gmail.com</p>
-    <p>tel: 691140253</p>
+
+
+<div class="contactConrainer container-fluid">
+  <div class="row row1 align-items-center">
+    <ng-container *ngTemplateOutlet="section1"></ng-container>
   </div>
-  <div class="formWrapper">
-    <form action="">
+  <div class="row row2">
+    <ng-container *ngTemplateOutlet="section2"></ng-container>
+  </div>
+  <div class="row row3 justify-content-md-center">
+    <ng-container *ngTemplateOutlet="section3"></ng-container>
+  </div>
+  <div class="row row4 justify-content-md-center justify-content-sm-end justify-content-end align-items-center">
+    <ng-container *ngTemplateOutlet="section4"></ng-container>
+  </div>
+</div>
+
+
+
+<!-- TITLE -->
+
+<ng-template #section1>
+  <div class="col-6 m-2 m-sm-1">
+    <h1 class="m-2 m-sm-5">Kontakt</h1>
+  </div>
+</ng-template>
+
+
+<!-- CONTACT DATA -->
+<ng-template #section2>
+  <div class="contactWrapper h-100 ml-sm-5 m-2">
+    <p class="ml-4 ml-sm-5 pl-sm-5">email: <span>troc.piotr@gmail.com</span></p>
+    <p class="ml-4 ml-sm-5 pl-sm-5">tel: <span>691140253</span></p>
+  </div>
+</ng-template>
+
+
+<!-- FORM -->
+<ng-template #section3>
+  <div class="formWrapper ml-3 ml-sm-5 h-100">
+    <form
+      [formGroup]="sendMessageGroup">
       <div class="input1">
         <mat-form-field appearance="legacy" class="input1__field">
           <mat-label>Podaj swój email</mat-label>
-          <input matInput placeholder="Email">
+          <input class="mt-2"
+            matInput
+            placeholder="Email"
+            name="jeden"
+            formControlName="emailName">
+        </mat-form-field>
+      </div>
+      <div class="input1">
+        <mat-form-field appearance="legacy" class="input1__field">
+          <mat-label>Tytuł</mat-label>
+          <input class="mt-2"
+            matInput
+            placeholder="Tytuł"
+            name="trzy"
+            formControlName="emailTitle">
         </mat-form-field>
       </div>
       <div class="input2">
         <mat-form-field class="input2__field">
           <mat-label>Twoja wiadomość</mat-label>
-          <textarea matInput placeholder="Twoja wiadomość..."></textarea>
+          <textarea class="mt-2"
+             matInput
+             placeholder="Twoja wiadomość..."
+             name="dwa"
+             formControlName="textareaName"
+             spellcheck="false"></textarea>
         </mat-form-field>
       </div>
     </form>
   </div>
-</div>
+</ng-template>
+
+<!-- SEND -->
+<ng-template #section4>
+  <button class="mr-sm-5 mr-3"
+  type="submit"
+  mat-raised-button color="primary"
+  (click)="sendMessage()">Wyślij</button>
+</ng-template>
+
 
 
