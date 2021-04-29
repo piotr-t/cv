@@ -18,7 +18,7 @@ export class AppComponent implements OnInit{
 
   hideNavDown = false;
   hideNavUp = false;
-  navPaths = ['Home', 'Skils', 'Article1', 'Contact'];
+  navPaths = ['Home', 'Skils', 'Article1', 'Article2', 'Article3', 'Contact'];
   navPathsIndex = 0;
   myTemplateVar;
 
@@ -30,8 +30,8 @@ export class AppComponent implements OnInit{
   }
 
   onActivate(outlet, TemplateVar ): void{
-    console.log(TemplateVar.activatedRoute.data._value,'TemplateVar');
-    
+    console.log(TemplateVar.activatedRoute.data._value, 'TemplateVar');
+
     this.navPathsIndex = this.navPaths.findIndex(v => v === TemplateVar._activatedRoute.snapshot.url[0].path);
 
     if (TemplateVar.activatedRoute.data._value) {
