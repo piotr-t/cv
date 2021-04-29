@@ -19,6 +19,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
 import { HttpClientModule } from '@angular/common/http';
 import { Article3Component } from './article3/article3.component';
+import { Article4Component } from './article4/article4.component';
 
 
 
@@ -31,7 +32,8 @@ import { Article3Component } from './article3/article3.component';
     SkilsComponent,
     ContactComponent,
     Article2Component,
-    Article3Component
+    Article3Component,
+    Article4Component
   ],
   imports: [
     BrowserModule,
