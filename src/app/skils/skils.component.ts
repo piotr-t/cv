@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-skils',
@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skils.component.scss']
 })
 export class SkilsComponent implements OnInit {
+
+  @HostListener('document:scroll', ['$event.target']) onScrollNav($event: any): void{
+    console.log($event);
+    
+  }
 
   constructor() { }
 

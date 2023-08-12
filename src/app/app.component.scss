@@ -1,3 +1,13 @@
+@font-face {
+  font-family: Gilroy light;
+  src: url(../assets/Fonts/Gilroy-FREE/Gilroy-Light.otf);
+}
+@font-face {
+  font-family: Gilroy bold;
+  src: url(../assets/Fonts/Gilroy-FREE/Gilroy-ExtraBold.otf);
+}
+
+
 
 @keyframes animationArroww {
   from {opacity:1;
@@ -41,66 +51,96 @@
 }
 
 
+.content__text{
+  opacity: 1;
+  min-height: 50%;
+  background-color: beige;
+}
 
-.articlesContainer{
-  background-color: brown;
-  height: 100vh;
-  width: 100vw;
-  margin:0px;
-  padding: 0px;
-  position: absolute;
-  top:0px;
-  left:0px;
-  .arrowContainer{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    z-index: 101;
-    height: 20vh;
-    width: 10vw;
-    .arrowWrapper{
-      width: 10vw;
-      height: 20vh;
 
-      .matIcon, .matIcon__up{
-        //position: absolute;
-        user-select: none;
-        font-size:max(30px, 5vw);
-        color:rgb(235, 224, 224);
-        cursor: pointer;
 
-        opacity:.9;
+.contrastt,.noContrast{
 
-      }
-      .matIcon__up{
-        transform: rotate(180deg);
-        //transform-origin: 130% 180%;
-        text-shadow: -5px -5px 5px rgb(87, 76, 76);
-        &:hover{
-         // transform-origin: 50% 50%;
-          transform: rotate(180deg) scale(1.05);
-        }
-        &:active{
-          //transform-origin: 130% 180%;
-          transform: rotate(180deg) scale(1);
-        }
-      }
-      .matIcon__down{
-        text-shadow: 5px 5px 5px rgb(87, 76, 76);
-        &:active{
-          transform: scale(1);
-          opacity:1;
-          animation-name: animationArroww;
-          animation-duration: .5s;
-        }
-        &:hover{
-          transform: scale(1.05);
-          color:rgb(231, 220, 220);
-          opacity: .8;
-        }
+  min-height: 100vh;
+  .content{
+   // background-color: rgba(0, 0, 0, 0.5);
+  }
+  .goalContainer__nav{
+
+  }
+
+  .content2{
+    background-color: rgba(127, 255, 212, 0.151);
+    min-height: 100vh;
+  }
+  .text{
+    background-color: rgba(0, 255, 255, 0.199);
+  }
+  .goalContainer__header--title,.goalContainer__header--subTitle{
+    background-color: beige;
+    p{
+      font-family: Gilroy bold;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 2em;
+    }
+  }
+  .content__text{
+    font-family: Gilroy light;
+    .content__text--paragraph{
+      letter-spacing: 2px;
+      text-indent: 20px;
+      font-size: 20px;
+      //text-align: center;
+      //text-decoration-line: line-through;
+      line-height: 30px;
+      &::first-letter{
+        font-family: Gilroy bold;
       }
     }
   }
 
+
+
+
+  .img__src{
+    min-height: 50vh;
+  }
+  .goalContainer__footer{
+    background-image: url("https://www.haascnc.com/content/dam/haascnc/community/htec/HTEC_NavBar_image.png/jcr:content/renditions/original.original/image.png");
+    width: 100%;
+  }
 }
+
+.w0{width: 0%;}
+
+.counter{text-align: center; background-color: blueviolet;}
+
+
+  
+
+
+
+.contrastt{
+  background-image: url("../assets/texture-background.jpg");
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:cover;
+}
+.noContrast{
+  background-color: bisque;
+}
+
+.arrowContainer{
+  position: sticky;
+  right: 0px;
+  left: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  z-index: 101;
+  height: 20vh;
+  width: 10vw;}
+
+

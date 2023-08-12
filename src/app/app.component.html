@@ -1,22 +1,50 @@
-<div class="articlesContainer" [@startAnimation]>
-  <router-outlet (activate)='onActivate($event, myTemplateVar)' #myTemplateVar="outlet" ></router-outlet>
+<div class="container-fluid pt-3" *ngIf="lessons; else spinnerTemp" [ngClass]="contrast === true ? 'noContrast':'contrastt'" [@startAnimation]>
+  <app-header></app-header>
+    <main class="row">
+      <div class="col-11 mx-auto my-5 content">
+        <div class="row goalContainer__header">
+          <div class="col-6 text">
+            <div class="col-10 mx-auto my-5 goalContainer__header--title mat-headline-1">
+              <p>CV Piotr Troc</p>
+            </div>
+            <div class="col-10 mx-auto goalContainer__header--subTitle">
+              <p>Front-End Developer</p>
+            </div>
+          <div class="col-11  my-5 mx-auto content__text">
+            <p class="content__text--paragraph">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+          </div>
+        </div>
+        <div class="col-6" >
+          <div class="col-10 g-auto my-5 mx-auto img__src">
+            <img class="w-100 h-100" src="./../assets/PiotrTroc1.jpg" title="Piotr Troc" alt="Piotr Troc picture" width="50%" height="50%" srcset="" aria-label="image Piotr Troc"> 
+          </div>
+        </div>
+      </div> 
+      <div class="row">
+        <div class="col-11 mx-auto my-5 h-100 content2">
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div #counter1 class="counter col-6">123</div>
+      </div>
+    </div>
+  </main>
+
   <div class="arrowContainer">
-    <div class="arrowWrapper">
-      <mat-icon
-      class="matIcon matIcon__up" aria-hidden="false" aria-label="Example home icon"
-      (click)="navToHome()"
-      *ngIf="!hideNavUp">
-        <span class="material-icons-outlined">arrow_drop_down_circle</span>
-      </mat-icon>
-    </div>
-    <div class="arrowWrapper">
-      <mat-icon
-      class="matIcon matIcon__down" aria-hidden="false" aria-label=""
-      (click)="navToHome()"
-      *ngIf="!hideNavDown">
-        <span class="material-icons-outlined">arrow_drop_down_circle</span>
-      </mat-icon>
-    </div>
+    <app-arrow-up *ngIf="showNavUp"></app-arrow-up>
   </div>
+  <app-skils></app-skils>
+
+  <app-footer></app-footer>
 </div>
+
+
+<ng-template #spinnerTemp>
+  <mat-spinner class="mx-auto" [style.margin-top]="windowH/20+'px'" [diameter]="windowH-(windowH/10)" [strokeWidth]="windowH/20" [color]="'warn'"></mat-spinner>
+</ng-template>
+
+
+
 

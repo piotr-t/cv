@@ -1,0 +1,42 @@
+ .arrowWrapper{
+      width: 10vw;
+      height: 20vh;
+
+      .matIcon, .matIcon__up{
+        //position: absolute;
+        user-select: none;
+        font-size:max(30px, 5vw);
+        color:rgb(235, 224, 224);
+        cursor: pointer;
+
+        opacity:.9;
+
+      }
+      .matIcon__up{
+        transform: rotate(180deg);
+        transform-origin: 200% 180%;
+        text-shadow: -5px -5px 5px rgb(87, 76, 76);
+        &:hover{
+         // transform-origin: 50% 50%;
+          transform: rotate(180deg) scale(1.05);
+        }
+        &:active{
+          //transform-origin: 130% 180%;
+          transform: rotate(180deg) scale(1);
+        }
+      }
+      .matIcon__down{
+        text-shadow: 5px 5px 5px rgb(87, 76, 76);
+        &:active{
+          transform: scale(1);
+          opacity:1;
+          animation-name: animationArroww;
+          animation-duration: .5s;
+        }
+        &:hover{
+          transform: scale(1.05);
+          color:rgb(231, 220, 220);
+          opacity: .8;
+        }
+      }
+    }
