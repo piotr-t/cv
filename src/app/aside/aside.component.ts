@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, QueryList, ViewChild, ViewChildren } from '@angular/core';
 import { AsideServiceService } from './aside-service.service';
 import { distinctUntilChanged } from 'rxjs/operators';
 import { trigger, state, style, transition, animate } from '@angular/animations';
@@ -30,7 +30,9 @@ export enum Colors{
     ])
   ],
 })
-export class AsideComponent implements OnInit {
+export class AsideComponent implements OnInit, AfterViewInit {
+
+  @ViewChildren('tooltip') tooltipp: QueryList<any>;
 
   //addClass = 'bg-info';
   articleID = 0;
@@ -41,7 +43,9 @@ export class AsideComponent implements OnInit {
     {iconContent:'error_outline'},
     {iconContent:'chat_bubble_outline'},
     {iconContent:'move_to_inbox', href:'projects'},
-  ]
+  ];
+
+
 
 
 
@@ -57,6 +61,13 @@ export class AsideComponent implements OnInit {
       //this.addClass = "bg-" + Colors[v];
       this.articleID = v;
     })
+
+    console.log(this.tooltipp,'tooltip');
+    
+  }
+
+  ngAfterViewInit() {
+    console.log(this.tooltipp['_results'][0],'tooltip');
   }
 
 }

@@ -25,6 +25,7 @@ import { AsideIconsDirective } from './aside/aside-icons.directive';
 import { ContentComponent } from './content/content.component';
 import { ProjectsComponent } from './content/projects/projects.component';
 import { SafePipe } from './content/safe.pipe';
+import {MatTooltipModule} from '@angular/material/tooltip'; 
 
 
 
@@ -55,7 +56,8 @@ import { SafePipe } from './content/safe.pipe';
     MatButtonModule,
     MatDialogModule,
     HttpClientModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatTooltipModule
   ],
   providers: [], //{provide: LocationStrategy, useClass: HashLocationStrategy}
   bootstrap: [AppComponent]

@@ -38,6 +38,12 @@ $CV-theme: mat-light-theme((
 html, body { width:100%;}
 body { 
   margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;overflow-x: hidden;height: 100%; width:100%;
-  //background-color: rgba(0, 0, 0, 0.8);
+  .tooltipClass{
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    background-color: rgb(28, 29, 29);
+}
   
 }

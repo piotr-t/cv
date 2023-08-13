@@ -4,12 +4,20 @@
         <!-- https://www.w3schools.com/icons/google_icons_action.asp -->
         <div *ngFor="let icon of icons" class="row justify-content-center">
             <a [href]="'#'+icon.href">
-                <div @openClose class="material-icons col m-3">{{icon.iconContent}}</div>
+                <div 
+                    @openClose 
+                    #tooltip
+                    class="material-icons col m-3" 
+                    matTooltip="Info about the action" 
+                    matTooltipPosition="left" 
+                    matTooltipClass="tooltipClass">
+                        {{icon.iconContent}}
+                </div>
             </a>
         </div>
         <div  *ngIf="articleID==1" class="row justify-content-center"><!-- @openClose -->
             <a href="#skils">
-                <img class="b-icon" @openClose src="assets/bootstrap-logo.png" alt="">
+                <img class="b-icon" @openClose src="assets/bootstrap-logo.png" alt="" matTooltip="Info about the action" matTooltipPosition="left" matTooltipClass="tooltipClass">
             </a>
         </div>
         <app-arrow-up  class="row justify-content-center"></app-arrow-up><!-- *ngIf="showNavUp" -->
