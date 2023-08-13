@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { SkilsComponent } from './skils/skils.component';
+import { SkilsComponent } from './content/skils/skils.component';
 import { AppComponent } from './app.component';
 
 const routes: Routes = [

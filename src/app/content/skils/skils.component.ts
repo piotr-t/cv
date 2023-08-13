@@ -7,8 +7,8 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class SkilsComponent implements OnInit {
 
-  @HostListener('document:scroll', ['$event.target']) onScrollNav($event: any): void{
-    console.log($event);
+  @HostListener('window:scroll', ['$event.target']) onScrollNav($event: any): void{
+    //console.log($event );
     
   }
 

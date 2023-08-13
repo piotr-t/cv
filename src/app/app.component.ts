@@ -1,4 +1,5 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
+import { ViewportScroller } from '@angular/common';
 import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 
 
@@ -24,10 +25,13 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
 
 export class AppComponent implements OnInit, AfterViewInit{
 
-
-  @HostListener('window:scroll', ['$event.target']) onScrollNav($event: any): void{
+  @HostListener('window:scroll', ['$event.target']) onScrollNav(): void{
+    let xPos = this.scroller.getScrollPosition()[1]; 
     if(window.scrollY>this.windowH/10){this.showNavUp = true;}else{this.showNavUp = false;};
   }
+
+
+
 
 
   @ViewChild('counter1')counter1: ElementRef;
@@ -35,13 +39,11 @@ export class AppComponent implements OnInit, AfterViewInit{
   lessons = false;
   showNavUp = false;
   windowH = 100;
+  
  
 
-  onAnimationEvent(event: AnimationEvent) {
-    console.log(event,'event');
-    
-  }
-  constructor(){}
+
+  constructor(private scroller: ViewportScroller){}
   
 
 

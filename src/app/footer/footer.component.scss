@@ -1,0 +1,15 @@
+.goalContainer__footer{
+    background-color: black;
+    width: 100%;
+    color:azure;
+    .author{
+        font-size: 15px;
+    }
+  }
+
+  abbr[title]{
+    border-bottom: none !important;
+    cursor: pointer !important;
+    text-overflow: ellipsis;
+    text-decoration: none;
+  }

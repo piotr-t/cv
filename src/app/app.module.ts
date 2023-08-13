@@ -7,7 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import {MatIconModule} from '@angular/material/icon';
-import { SkilsComponent } from './skils/skils.component';
+import { SkilsComponent } from './content/skils/skils.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
@@ -19,7 +19,12 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { CounterDirective } from './counter.directive';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { ArrowUpComponent } from './arrow-up/arrow-up.component';
+import { ArrowUpComponent } from './aside/arrow-up/arrow-up.component';
+import { AsideComponent } from './aside/aside.component';
+import { AsideIconsDirective } from './aside/aside-icons.directive';
+import { ContentComponent } from './content/content.component';
+import { ProjectsComponent } from './content/projects/projects.component';
+import { SafePipe } from './content/safe.pipe';
 
 
 
@@ -31,7 +36,12 @@ import { ArrowUpComponent } from './arrow-up/arrow-up.component';
     CounterDirective,
     HeaderComponent,
     FooterComponent,
-    ArrowUpComponent
+    ArrowUpComponent,
+    AsideComponent,
+    AsideIconsDirective,
+    ContentComponent,
+    ProjectsComponent,
+    SafePipe
   ],
   imports: [
     BrowserModule,

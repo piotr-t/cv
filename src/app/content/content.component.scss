@@ -1,0 +1,91 @@
+@font-face {
+    font-family: Gilroy light;
+    src: url(../../assets/Fonts/Gilroy-FREE/Gilroy-Light.otf);
+  }
+  @font-face {
+    font-family: Gilroy bold;
+    src: url(../../assets/Fonts/Gilroy-FREE/Gilroy-ExtraBold.otf);
+  }
+  
+
+  
+  
+  .content__text{
+    opacity: 1;
+    min-height: 50%;
+    background-color: beige;
+  }
+  
+  
+  
+  .contrastt,.noContrast{
+  
+    min-height: 100vh;
+    .content{
+     // background-color: rgba(0, 0, 0, 0.5);
+    }
+    .goalContainer__nav{
+  
+    }
+  
+    .content2{
+      background-color: rgba(127, 255, 212, 0.151);
+      min-height: 100vh;
+    }
+    .text{
+      background-color: rgba(0, 255, 255, 0.199);
+    }
+ 
+  
+  
+  
+  
+    .img__src{
+      min-height: 50vh;
+    }
+  
+  }
+  
+  .w0{width: 0%;}
+  
+  .counter{text-align: center; background-color: blueviolet;}
+  
+  
+  
+  
+    
+  .goalContainer__header--title,.goalContainer__header--subTitle{
+    background-color: beige;
+    p{
+      font-family: Gilroy bold;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 2em;
+    }
+  }
+  .content__text{
+    font-family: Gilroy light;
+    .content__text--paragraph{
+      letter-spacing: 2px;
+      text-indent: 20px;
+      font-size: 20px;
+      //text-align: center;
+      //text-decoration-line: line-through;
+      line-height: 30px;
+      &::first-letter{
+        font-family: Gilroy bold;
+      }
+    }
+  } 
+  
+  
+  .contrastt{
+    background-image: url("../../assets/texture-background.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+  }
+  .noContrast{
+    background-color: bisque;
+  }

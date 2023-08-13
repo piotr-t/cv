@@ -1,0 +1,21 @@
+<div class="container-fluid my-5">
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <div class="row ">
+                <div class="col text-align-center">
+                    <p class="col h1">Projects</p>
+                </div>
+            </div>
+            <div *ngFor="let mProj of myProjects" class="row my-5">
+                <mat-card class="col card--project my-5"  [MatCardAppearance]="'oraised'">
+                    <mat-card-title [matCardTitle]="'title'">{{mProj.title|uppercase}}</mat-card-title>
+                    <mat-card-subtitle>{{mProj.subtitle}}</mat-card-subtitle>
+                    <mat-card-content>
+                        <iframe class="col my-5 proj" [src]="mProj.src|safe" frameborder="0"></iframe>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+        
+    </div>
+</div>

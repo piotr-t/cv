@@ -14,8 +14,9 @@
       }
       .matIcon__up{
         transform: rotate(180deg);
-        transform-origin: 200% 180%;
+        transform-origin: 4500% 180%;
         text-shadow: -5px -5px 5px rgb(87, 76, 76);
+        //transform: scale(0.8);
         &:hover{
          // transform-origin: 50% 50%;
           transform: rotate(180deg) scale(1.05);
@@ -39,4 +40,12 @@
           opacity: .8;
         }
       }
+    }
+
+
+    .arrow{
+      transform: scale(2);
+      padding: 10px auto;
+      background-color: rgb(236, 217, 217);
+      border-radius: 100%;
     }
