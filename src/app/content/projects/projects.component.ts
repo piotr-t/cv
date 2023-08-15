@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { myProjects } from '../../common';
 
 @Component({
   selector: 'app-projects',
@@ -7,11 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  myProjects = [
-    {title:'mitro',subtitle:'', src:'https://mitro.com.pl/#/', description:'Strona internetowa firmy remontowo-budowlanej', srcCode:'', page:'https://mitro.com.pl'},
-    {title:'test',subtitle:'', src:'https://blog.mimacom.com/css-transitions-made-simple-with-angular-animations/', description:'', srcCode:''},
-    {title:'test',subtitle:'', src:'http://localhost:4200/#projects', description:'', srcCode:''},
-  ]
+  myProjects = myProjects;
 
   constructor() { }
 

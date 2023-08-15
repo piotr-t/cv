@@ -32,17 +32,19 @@ export enum Colors{
 })
 export class AsideComponent implements OnInit, AfterViewInit {
 
-  @ViewChildren('tooltip') tooltipp: QueryList<any>;
 
-  //addClass = 'bg-info';
+  addClass;// = 'bg-info opcityIcons';
   articleID = 0;
+ 
 
   icons=[
-    {iconContent:'view_headline'},
-    {iconContent:'view_column'},
-    {iconContent:'error_outline'},
-    {iconContent:'chat_bubble_outline'},
-    {iconContent:'move_to_inbox', href:'projects'},
+    {iconContent:'view_headline',matTooltip:'projects section'},
+    {iconContent:'view_column',matTooltip:'projects section'},
+    {iconContent:'error_outline',matTooltip:'projects section'},
+    {iconContent:'chat_bubble_outline',matTooltip:'projects section'},
+    {iconContent:'move_to_inbox',matTooltip:'projects section', href:'projects'},
+    {matTooltip:'arrow to skils', href:'skils', class:''},
+    {iconContent:'arrow_upward', matTooltip:'arrow to header', href:'header', class:'arrTop'},
   ];
 
 
@@ -60,14 +62,11 @@ export class AsideComponent implements OnInit, AfterViewInit {
     this.service.subjectAside.pipe(distinctUntilChanged()).subscribe((v: any)=>{
       //this.addClass = "bg-" + Colors[v];
       this.articleID = v;
-    })
-
-    console.log(this.tooltipp,'tooltip');
-    
+    })  
   }
 
   ngAfterViewInit() {
-    console.log(this.tooltipp['_results'][0],'tooltip');
+
   }
 
 }

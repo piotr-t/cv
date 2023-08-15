@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { articles } from '../common'
 
 export enum sectionID{
   skils,
@@ -13,6 +14,7 @@ export enum sectionID{
 export class ContentComponent implements OnInit {
 
   title ='some text';
+  articles = articles;
 
 
   constructor() { }

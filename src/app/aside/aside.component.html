@@ -1,26 +1,34 @@
 
 <div class="row justify-content-end">
-    <div class="col-6 my-5"><!--  [ngClass]="addClass" -->
+    <div class="col-6 my-5" [ngClass]="addClass"><!--   -->
         <!-- https://www.w3schools.com/icons/google_icons_action.asp -->
         <div *ngFor="let icon of icons" class="row justify-content-center">
-            <a [href]="'#'+icon.href">
-                <div 
-                    @openClose 
-                    #tooltip
-                    class="material-icons col m-3" 
-                    matTooltip="Info about the action" 
-                    matTooltipPosition="left" 
-                    matTooltipClass="tooltipClass">
-                        {{icon.iconContent}}
-                </div>
-            </a>
+            <div class="col-8">
+                <a [href]="'#'+icon.href" class="row justify-content-center my-2 align-items-center"  style="text-decoration: none;color:black">
+                    <div 
+                        @openClose 
+                        appCircle
+                        [style]="icon.class ? 'box-shadow: 2px 2px 1px lightblue inset; color:black':''"
+                        class="material-icons col-12 icons p-0 m-0 {{icon.class}}" 
+                        [matTooltip]="icon.matTooltip" 
+                        matTooltipPosition="left" 
+                        matTooltipClass="tooltipClass">
+                            <ng-container *ngIf="icon.iconContent; else imageTemp">
+                                {{icon.iconContent}}
+                            </ng-container>
+                    </div>
+                </a>
+            </div>
         </div>
-        <div  *ngIf="articleID==1" class="row justify-content-center"><!-- @openClose -->
-            <a href="#skils">
-                <img class="b-icon" @openClose src="assets/bootstrap-logo.png" alt="" matTooltip="Info about the action" matTooltipPosition="left" matTooltipClass="tooltipClass">
-            </a>
+        <div  *ngIf="articleID!=1" class="row justify-content-center"><!-- @openClose -->
+
         </div>
-        <app-arrow-up  class="row justify-content-center"></app-arrow-up><!-- *ngIf="showNavUp" -->
     </div>
 </div>
+
+<ng-template #imageTemp>
+    <ng-container  *ngIf="articleID!=1">
+        <img class="b-icon p-0" @openClose src="assets/bootstrap-logo.png" alt="">
+    </ng-container>
+</ng-template>
 

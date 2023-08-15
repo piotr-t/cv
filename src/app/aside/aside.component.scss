@@ -1,6 +1,5 @@
 .b-icon{
     width: 100%;
-    padding: 10px;
 }
 
 app-arrow-up{
@@ -17,3 +16,15 @@ app-arrow-up{
     background-color: aqua;
     text-transform: uppercase;
 }
+
+.arrTop{
+    font-size: 50px;
+    max-width: unset !important;
+    background-color: white;
+    border-radius:100%;
+    text-shadow: 2px 2px 5px rgb(87, 76, 76);
+  }
+
+  .icons{
+    text-align: center;
+  }

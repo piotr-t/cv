@@ -5,6 +5,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
 
 
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -30,11 +31,9 @@ export class AppComponent implements OnInit, AfterViewInit{
     if(window.scrollY>this.windowH/10){this.showNavUp = true;}else{this.showNavUp = false;};
   }
 
-
-
-
-
   @ViewChild('counter1')counter1: ElementRef;
+
+ 
 
   lessons = false;
   showNavUp = false;

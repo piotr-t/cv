@@ -25,7 +25,8 @@ import { AsideIconsDirective } from './aside/aside-icons.directive';
 import { ContentComponent } from './content/content.component';
 import { ProjectsComponent } from './content/projects/projects.component';
 import { SafePipe } from './content/safe.pipe';
-import {MatTooltipModule} from '@angular/material/tooltip'; 
+import {MatTooltipModule} from '@angular/material/tooltip';
+import { CircleDirective } from './aside/circle.directive'; 
 
 
 
@@ -42,7 +43,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     AsideIconsDirective,
     ContentComponent,
     ProjectsComponent,
-    SafePipe
+    SafePipe,
+    CircleDirective
   ],
   imports: [
     BrowserModule,
