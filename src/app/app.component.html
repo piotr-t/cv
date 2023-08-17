@@ -1,15 +1,22 @@
 <div class="container-fluid pt-3 px-0 gx-0" *ngIf="lessons; else spinnerTemp" [ngClass]="contrast === true ? 'noContrast':'contrastt'" [@startAnimation]>
-  <app-header class="row m-0 p-0" AsideIcons AsideIconsTop="300" AsideIcons="2" id="header"></app-header>
-  <app-content class="row m-0 p-0"></app-content>
+  <div class="row cont">
+    <div class="col-12">
+      <app-header class="row m-0 p-0" AsideIcons AsideIconsTop="300" AsideIcons="2" id="header"></app-header>
+    </div>
+    <div class="col-12" [@startAnimation]>
+      <router-outlet [@startAnimation]></router-outlet>
+    </div>
+    <div class="col-12 align-self-end">
+      <app-footer class="row m-0 p-0 gx-0"></app-footer>
+    </div>
+  </div>
   <app-aside class="fixed-bottom col-1 m-5"></app-aside>
-  <app-footer class="row m-0 p-0 gx-0"></app-footer>
 </div>
 
 
 <ng-template #spinnerTemp>
   <mat-spinner class="mx-auto" [style.margin-top]="windowH/20+'px'" [diameter]="windowH-(windowH/10)" [strokeWidth]="windowH/20" [color]="'warn'"></mat-spinner>
-</ng-template>
-
+</ng-template> 
 
 
 

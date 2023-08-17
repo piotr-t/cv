@@ -26,7 +26,8 @@ import { ContentComponent } from './content/content.component';
 import { ProjectsComponent } from './content/projects/projects.component';
 import { SafePipe } from './content/safe.pipe';
 import {MatTooltipModule} from '@angular/material/tooltip';
-import { CircleDirective } from './aside/circle.directive'; 
+import { CircleDirective } from './aside/circle.directive';
+import { AboutProjectComponent } from './content/about-project/about-project.component'; 
 
 
 
@@ -44,7 +45,8 @@ import { CircleDirective } from './aside/circle.directive';
     ContentComponent,
     ProjectsComponent,
     SafePipe,
-    CircleDirective
+    CircleDirective,
+    AboutProjectComponent
   ],
   imports: [
     BrowserModule,

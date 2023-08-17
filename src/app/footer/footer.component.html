@@ -1,12 +1,26 @@
 <footer class="container-fluid m-0 p-0 gx-0 goalContainer__footer">
   <div class="row">
-    <div class="col-3 m-4 lead author">author: <i>Piotr Troc</i></div>
-    <abbr title="https://github.com/piotr-t/cv &#013; branches: &#013; master &#013; newCV">
-      <div class="col lead ">source code of page <a href="http://" target="_blank" rel="noopener noreferrer">https://github.com/piotr-t/cv</a></div>
-    </abbr>
-    <abbr title="">
-      <p class="version lead " *ngIf="version">Angular version: {{version.full}}</p>
-    </abbr>
+    <div class="col-3 p-4 commonauthor footer--text">author: <i>Piotr Troc</i></div>
+    <div class="col-6">
+      <div class="row aling-items-center">
+        <div class="col-12 my-1">
+          <abbr title="https://github.com/piotr-t/cv &#013; branches: &#013; master &#013; newCV">
+            <p class=" lead footer--text">source code of page 
+              <a class="footer--text" href="https://github.com/piotr-t/cv" target="_blank" rel="noopener noreferrer">https://github.com/piotr-t/cv</a>
+            </p>
+          </abbr>
+        </div>
+        <div class="col-12">
+          <abbr title="">
+            <p class="version lead footer--text" *ngIf="version">Angular version: {{version.full}}</p>
+          </abbr>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <p [routerLink]="['about']">Abot page</p>
+    </div>
+
   </div>
 
   </footer>

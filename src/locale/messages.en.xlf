@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="pl-PL" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="2047259268103334715" datatype="html">
+        <source>CV Piotr Troc</source>
+        <target>CV Piotr Troc</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/content/content.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">first description</note>
+      </trans-unit>
+      <trans-unit id="187187500641108332" datatype="html">
+        <source>dsadfsa</source>
+        <target>okk....................................</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/content/content.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
