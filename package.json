@@ -12,7 +12,10 @@
     "i18n:extract": "ng xi18n --output-path src/locale",
     "start:en": "ng serve --configuration=en --port=4207"
   },
-  "keywords":["CV", "Piotr Troc"],
+  "keywords": [
+    "CV",
+    "Piotr Troc"
+  ],
   "private": true,
   "dependencies": {
     "@angular/animations": "~11.2.8",
@@ -25,6 +28,8 @@
     "@angular/platform-browser": "~11.2.8",
     "@angular/platform-browser-dynamic": "~11.2.8",
     "@angular/router": "~11.2.8",
+    "@ngx-translate/core": "^15.0.0",
+    "@ngx-translate/http-loader": "^8.0.0",
     "bootstrap": "^4.6.0",
     "jquery": "^3.6.0",
     "rxjs": "~6.6.0",

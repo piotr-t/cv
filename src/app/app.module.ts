@@ -14,7 +14,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { CounterDirective } from './counter.directive';
 import { HeaderComponent } from './header/header.component';
@@ -28,6 +28,8 @@ import { SafePipe } from './content/safe.pipe';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { CircleDirective } from './aside/circle.directive';
 import { AboutProjectComponent } from './content/about-project/about-project.component'; 
+import {TranslateHttpLoader} from'@ngx-translate/http-loader'
+import { TranslateModule } from '@ngx-translate/core';
 
 
 
@@ -61,9 +63,19 @@ import { AboutProjectComponent } from './content/about-project/about-project.com
     MatDialogModule,
     HttpClientModule,
     MatProgressSpinnerModule,
-    MatTooltipModule
+    MatTooltipModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader:{provide:TranslateHttpLoader,
+      useFactory:HttpLoaderFactory,
+      deps:[HttpClient]
+    }})
   ],
   providers: [], //{provide: LocationStrategy, useClass: HashLocationStrategy}
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+export function HttpLoaderFactory(http:HttpClient){
+  return new TranslateHttpLoader(http);
+}

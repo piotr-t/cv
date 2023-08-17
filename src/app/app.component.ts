@@ -57,6 +57,8 @@ export class AppComponent implements OnInit, AfterViewInit{
   ngOnInit(): void{
 
     this.windowH = window.innerHeight;
+    //console.log(document);
+    
     
   }
 
