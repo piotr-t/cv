@@ -5,15 +5,6 @@
   "projects": {
     "CV": {
       "projectType": "application",
-      "i18n":{
-        "sourceLocale":"pl",
-        "locales":{
-          "en":{
-            "translation": "src/locale/messages.en.xlf",
-            "baseHref": ""
-          }
-        }
-      },
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
@@ -74,15 +65,6 @@
                   "maximumError": "10kb"
                 }
               ]
-            },
-            "en": {
-              "aot": true,
-              "localize": ["en"],
-              "outputPath": "dist/under-construction-en/",
-              "i18nFile":"src/locale/messages.fr.xlf",
-              "i18nFormat":"xlf",
-              "i18nLocale":"en",
-              "i18nMissingTranslation": "error"
             }
           }
         },
@@ -94,18 +76,7 @@
           "configurations": {
             "production": {
               "browserTarget": "CV:build:production"
-            },
-            "en": {
-              "browserTarget": "CV:build:en"
             }
-          }
-        },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "browserTarget": "CV:build",
-            "format": "xlf",
-            "outputPath": "src/locale"
           }
         },
         "test": {

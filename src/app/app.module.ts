@@ -29,7 +29,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import { CircleDirective } from './aside/circle.directive';
 import { AboutProjectComponent } from './content/about-project/about-project.component'; 
 import {TranslateHttpLoader} from'@ngx-translate/http-loader'
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 
 
 
@@ -67,7 +67,7 @@ import { TranslateModule } from '@ngx-translate/core';
     ReactiveFormsModule,
     HttpClientModule,
     TranslateModule.forRoot({
-      loader:{provide:TranslateHttpLoader,
+      loader:{provide:TranslateLoader,
       useFactory:HttpLoaderFactory,
       deps:[HttpClient]
     }})
