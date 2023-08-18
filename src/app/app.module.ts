@@ -28,8 +28,7 @@ import { SafePipe } from './content/safe.pipe';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { CircleDirective } from './aside/circle.directive';
 import { AboutProjectComponent } from './content/about-project/about-project.component'; 
-import {TranslateHttpLoader} from'@ngx-translate/http-loader'
-import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+
 
 
 
@@ -65,17 +64,10 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
     MatProgressSpinnerModule,
     MatTooltipModule,
     ReactiveFormsModule,
-    HttpClientModule,
-    TranslateModule.forRoot({
-      loader:{provide:TranslateLoader,
-      useFactory:HttpLoaderFactory,
-      deps:[HttpClient]
-    }})
+    HttpClientModule
   ],
   providers: [], //{provide: LocationStrategy, useClass: HashLocationStrategy}
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-export function HttpLoaderFactory(http:HttpClient){
-  return new TranslateHttpLoader(http);
-}
+

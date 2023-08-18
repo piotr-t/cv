@@ -23,13 +23,6 @@ export const myProjects = [
         srcCode:''
     },
     {
-        title:'cv',
-        subtitle:'', 
-        src:'http://localhost:4200/#projects', 
-        description:'', 
-        srcCode:'https://github.com/piotr-t/cv'
-    },
-    {
         title:'cnc simulator',
         subtitle:'', 
         src:'http://piotrt.ct8.pl', 

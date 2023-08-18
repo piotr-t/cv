@@ -8,9 +8,9 @@ import { ContentComponent } from './content/content.component';
 
 const routes: Routes = [
 
-  {path: '', component: ContentComponent, pathMatch: 'full'},
+  {path: '', component: ContentComponent},
   {path:'about', component: AboutProjectComponent,pathMatch: 'full'},
-  {path: '**',pathMatch: 'full', component: NotFoundComponent}
+  {path: '**',pathMatch: 'full', component: ContentComponent}
 ];
 
 @NgModule({

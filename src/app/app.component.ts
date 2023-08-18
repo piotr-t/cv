@@ -35,7 +35,7 @@ export class AppComponent implements OnInit, AfterViewInit{
 
  
 
-  lessons = false;
+  lessons = true;
   showNavUp = false;
   windowH = 100;
   
@@ -51,13 +51,16 @@ export class AppComponent implements OnInit, AfterViewInit{
 
 
   ngAfterViewInit(): void{
-    setTimeout(()=>{this.lessons=true}, 1);
+    //setTimeout(()=>{this.lessons=true}, 1);
+    console.log(window.navigator.language);
   }
 
   ngOnInit(): void{
 
     this.windowH = window.innerHeight;
-    //console.log(document);
+    
+    
+    
     
     
   }
