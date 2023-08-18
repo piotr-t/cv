@@ -10,6 +10,10 @@ export class AsideIconsDirective implements OnInit{
   @Input()AsideIcons: number;
   @Input()AsideIconsTop: number = 0;
 
+   /** 
+    * Desc
+    * @arg void
+    */
   @HostListener('window:scroll', ['$event.target']) onScrollNav(): void{
 
     let xPos = this.scroller.getScrollPosition()[1]; 
@@ -25,15 +29,24 @@ export class AsideIconsDirective implements OnInit{
 
    
    public set Location(v : string) {
+    /** 
+    * Desc
+    */
     console.log(v,'v');
     
    }
    
-
+   /** 
+    * Desc
+    */
    ngOnInit(): void {
 
+    /** 
+    * Desc
+    */
     this.onScrollNav()
      
+
    }
 
 }

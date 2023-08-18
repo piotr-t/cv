@@ -2,10 +2,7 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 import { ViewportScroller } from '@angular/common';
 import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 
-
-
-
-
+ 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -26,6 +23,9 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
 
 export class AppComponent implements OnInit, AfterViewInit{
 
+  /**
+  * function that
+  */ 
   @HostListener('window:scroll', ['$event.target']) onScrollNav(): void{
     let xPos = this.scroller.getScrollPosition()[1]; 
     if(window.scrollY>this.windowH/10){this.showNavUp = true;}else{this.showNavUp = false;};

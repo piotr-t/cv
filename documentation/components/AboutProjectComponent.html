@@ -302,8 +302,10 @@ export class AboutProjectComponent implements OnInit {
             &lt;h3&gt;Autor: Piotr Troc&lt;/h3&gt;
             &lt;p&gt;Source code: &lt;a href&#x3D;&quot;https://github.com/piotr-t/cv&quot; target&#x3D;&quot;_blank&quot;&gt;https://github.com/piotr-t/cv&lt;/a&gt;&lt;/p&gt;
             &lt;p&gt;Angular Version:{{common.VERSION.full}}&lt;/p&gt;
-
         &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;iframe class&#x3D;&quot;w-100 h-max&quot; src&#x3D;&quot;http://piotrt.smallhost.pl&quot; frameborder&#x3D;&quot;0&quot;&gt;&lt;/iframe&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
@@ -313,7 +315,9 @@ export class AboutProjectComponent implements OnInit {
                 <p class="comment">
                     <code>./about-project.component.scss</code>
                 </p>
-                <pre class="line-numbers"><code class="language-scss"></code></pre>
+                <pre class="line-numbers"><code class="language-scss">.h-max{
+    min-height: 100vh;
+}</code></pre>
     </div>
 
     <div class="tab-pane fade " id="tree">
@@ -341,7 +345,7 @@ export class AboutProjectComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div class="container-fluid">    <div class="row justify-content-center">        <div class="col-8">            <h3>Project name: Piotr Troc CV</h3>            <h3>Autor: Piotr Troc</h3>            <p>Source code: <a href="https://github.com/piotr-t/cv" target="_blank">https://github.com/piotr-t/cv</a></p>            <p>Angular Version:{{common.VERSION.full}}</p>        </div>    </div></div></div>'
+        var COMPONENT_TEMPLATE = '<div><div class="container-fluid">    <div class="row justify-content-center">        <div class="col-8">            <h3>Project name: Piotr Troc CV</h3>            <h3>Autor: Piotr Troc</h3>            <p>Source code: <a href="https://github.com/piotr-t/cv" target="_blank">https://github.com/piotr-t/cv</a></p>            <p>Angular Version:{{common.VERSION.full}}</p>        </div>    </div>    <div class="row">        <iframe class="w-100 h-max" src="http://piotrt.smallhost.pl" frameborder="0"></iframe>    </div></div></div>'
     var COMPONENTS = [{'name': 'AboutProjectComponent', 'selector': 'app-about-project'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ArrowUpComponent', 'selector': 'app-arrow-up'},{'name': 'AsideComponent', 'selector': 'app-aside'},{'name': 'ContentComponent', 'selector': 'app-content'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'NotFoundComponent', 'selector': 'app-not-found'},{'name': 'ProjectsComponent', 'selector': 'app-projects'},{'name': 'SkilsComponent', 'selector': 'app-skils'}];
     var DIRECTIVES = [{'name': 'AsideIconsDirective', 'selector': '[AsideIcons]'},{'name': 'CircleDirective', 'selector': '[appCircle]'},{'name': 'CounterDirective', 'selector': '[appCounter]'}];
     var ACTUAL_COMPONENT = {'name': 'AboutProjectComponent'};

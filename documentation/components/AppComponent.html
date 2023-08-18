@@ -287,6 +287,13 @@
             </tr>
 
 
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>function that</p>
+</div>
+
+                </td>
+            </tr>
         </tbody>
     </table>
 </section>
@@ -406,6 +413,8 @@
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>function that</p>
+</div>
 
                     <div class="io-description">
                         <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
@@ -548,10 +557,7 @@
 import { ViewportScroller } from &#x27;@angular/common&#x27;;
 import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild } from &#x27;@angular/core&#x27;;
 
-
-
-
-
+ 
 @Component({
   selector: &#x27;app-root&#x27;,
   templateUrl: &#x27;./app.component.html&#x27;,
@@ -572,6 +578,9 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
 
 export class AppComponent implements OnInit, AfterViewInit{
 
+  /**
+  * function that
+  */ 
   @HostListener(&#x27;window:scroll&#x27;, [&#x27;$event.target&#x27;]) onScrollNav(): void{
     let xPos &#x3D; this.scroller.getScrollPosition()[1]; 
     if(window.scrollY&gt;this.windowH/10){this.showNavUp &#x3D; true;}else{this.showNavUp &#x3D; false;};

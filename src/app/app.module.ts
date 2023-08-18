@@ -64,7 +64,7 @@ import { AboutProjectComponent } from './content/about-project/about-project.com
     MatProgressSpinnerModule,
     MatTooltipModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [], //{provide: LocationStrategy, useClass: HashLocationStrategy}
   bootstrap: [AppComponent]

@@ -182,7 +182,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/aside/aside-icons.directive.ts:20</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/aside/aside-icons.directive.ts:24</a></div>
                             </td>
                         </tr>
 
@@ -331,12 +331,21 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="13"
-                            class="link-to-prism">src/app/aside/aside-icons.directive.ts:13</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="17"
+                            class="link-to-prism">src/app/aside/aside-icons.directive.ts:17</a></div>
                 </td>
             </tr>
 
 
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Desc</p>
+</div>
+
+                    <div>
+                    </div>
+                </td>
+            </tr>
         </tbody>
     </table>
 </section>
@@ -365,14 +374,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="33"
-                            class="link-to-prism">src/app/aside/aside-icons.directive.ts:33</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="42"
+                            class="link-to-prism">src/app/aside/aside-icons.directive.ts:42</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Desc</p>
+</div>
 
                     <div class="io-description">
                         <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
@@ -411,14 +422,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="13"
-                            class="link-to-prism">src/app/aside/aside-icons.directive.ts:13</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="17"
+                            class="link-to-prism">src/app/aside/aside-icons.directive.ts:17</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Desc</p>
+</div>
 
                     <div class="io-description">
                         <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
@@ -451,7 +464,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/aside/aside-icons.directive.ts:27</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/aside/aside-icons.directive.ts:31</a></div>
                                 </td>
                             </tr>
                     <tr>
@@ -511,6 +524,10 @@ export class AsideIconsDirective implements OnInit{
   @Input()AsideIcons: number;
   @Input()AsideIconsTop: number &#x3D; 0;
 
+   /** 
+    * Desc
+    * @arg void
+    */
   @HostListener(&#x27;window:scroll&#x27;, [&#x27;$event.target&#x27;]) onScrollNav(): void{
 
     let xPos &#x3D; this.scroller.getScrollPosition()[1]; 
@@ -526,15 +543,24 @@ export class AsideIconsDirective implements OnInit{
 
    
    public set Location(v : string) {
+    /** 
+    * Desc
+    */
     console.log(v,&#x27;v&#x27;);
     
    }
    
-
+   /** 
+    * Desc
+    */
    ngOnInit(): void {
 
+    /** 
+    * Desc
+    */
     this.onScrollNav()
      
+
    }
 
 }

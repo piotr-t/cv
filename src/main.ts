@@ -7,9 +7,8 @@ import { environment } from './environments/environment';
 if (environment.production) {
  enableProdMode();
 }
-/** 
- * detect browser language**/ 
-if(window.navigator.language){console.log(window.navigator.language,'lang');}
+
+//if(window.navigator.language){console.log(window.navigator.language,'lang');}
 
 
 
