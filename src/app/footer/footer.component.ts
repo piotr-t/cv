@@ -3,7 +3,7 @@ import * as common from '@angular/common';
 
 
 /**
- * Footer component
+ * Footer componenttttttttttttttttttttttttttttttttttttttttttttttttt
  */
 @Component({
   selector: 'app-footer',
