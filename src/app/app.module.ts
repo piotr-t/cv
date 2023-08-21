@@ -15,7 +15,6 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
-import { CounterDirective } from './counter.directive';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ArrowUpComponent } from './aside/arrow-up/arrow-up.component';
@@ -36,7 +35,6 @@ import { AboutProjectComponent } from './content/about-project/about-project.com
     AppComponent,
     NotFoundComponent,
     SkilsComponent,
-    CounterDirective,
     HeaderComponent,
     FooterComponent,
     ArrowUpComponent,

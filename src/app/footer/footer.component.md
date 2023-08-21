@@ -1,6 +1,7 @@
 # Footer Component
 
-[comment]: <> (![Screenshot](../images/nodejs.png))
+## contains
 
 
-<img src="../images/nodejs.png" width="200"/>
+
+

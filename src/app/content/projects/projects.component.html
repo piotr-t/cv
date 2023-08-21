@@ -14,8 +14,10 @@
                         <iframe class="col my-5 proj" [src]="mProj.src|safe" frameborder="0"></iframe>
                     </mat-card-content>
                     <mat-card-footer>
-                        <p *ngIf="mProj.page">page: <a href="{{mProj.page}}">{{mProj.page}}</a></p>
-                        <p *ngIf="mProj.srcCode">cource code:{{mProj.srcCode}}</p>
+                        <div class="col-12 px-5">
+                            <p *ngIf="mProj.page">Page: <a href="{{mProj.page}}">{{mProj.page}}</a></p>
+                            <p *ngIf="mProj.srcCode">Source code: <a href="{{mProj.srcCode}}" target="_blank" rel="noopener noreferrer">{{mProj.srcCode}}</a></p>
+                        </div>
                     </mat-card-footer>
                 </mat-card>
             </div>

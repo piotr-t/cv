@@ -1,11 +1,17 @@
 <footer class="container-fluid m-0 p-0 gx-0 goalContainer__footer">
   <div class="row">
-    <div class="col-3 p-4 commonauthor footer--text">author: <i>Piotr Troc</i></div>
-    <div class="col-6">
+    <div class="col-3 px-4 commonauthor footer--text">
+      <div class="row align-content-center h-100">
+        <div class="col-11 px-5">
+          <p>author: <i>Piotr Troc</i></p>
+        </div>
+        </div>
+      </div>
+    <div class="col-6 p-4">
       <div class="row aling-items-center">
         <div class="col-12 my-1">
           <abbr title="https://github.com/piotr-t/cv &#013; branches: &#013; master &#013; newCV">
-            <p class=" lead footer--text">source code of page 
+            <p class=" lead footer--text">source code of page: 
               <a class="footer--text" href="https://github.com/piotr-t/cv" target="_blank" rel="noopener noreferrer">https://github.com/piotr-t/cv</a>
             </p>
           </abbr>
@@ -17,10 +23,8 @@
         </div>
       </div>
     </div>
-    <div class="col-3">
-      <p [routerLink]="['about']">Abot page</p>
+    <div class="col-3 py-3">
+      <p>Abot page:<a class="pageDoc" [routerLink]="['about']">page documentation</a></p>
     </div>
-
   </div>
-
   </footer>

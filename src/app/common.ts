@@ -15,13 +15,13 @@ export const myProjects = [
         srcCode:'https://github.com/piotr-t/MITRO', 
         page:'https://mitro.com.pl'
     },
-    {
-        title:'test',
-        subtitle:'', 
-        src:'https://blog.mimacom.com/css-transitions-made-simple-with-angular-animations/', 
-        description:'', 
-        srcCode:''
-    },
+    //{
+      //  title:'test',
+      //  subtitle:'', 
+     //  src:'https://blog.mimacom.com/css-transitions-made-simple-with-angular-animations/', 
+      //  description:'', 
+      //  srcCode:''
+    //},
     {
         title:'cnc simulator',
         subtitle:'', 

@@ -11,10 +11,7 @@ export class CircleDirective implements OnInit, AfterViewInit{
   ngOnInit(){
     let element = this.el.nativeElement;
 
-    if(element.classList.contains('arrTop')){
 
-      console.log(element.clientHeight,'ellll'); 
-    }
   }
 
   ngAfterViewInit() {
@@ -22,7 +19,6 @@ export class CircleDirective implements OnInit, AfterViewInit{
 
     if(this.el.nativeElement.classList.contains('arrTop')){
       element.style.width = element.clientHeight+'px';
-      console.log(element.style,'ellll'); 
     }
 
   }
