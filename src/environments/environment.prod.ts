@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  docunentationURL:'https://cv.piotrt.smallhost.pl/CV_documentation/'
 };
