@@ -7,14 +7,14 @@ export const articles = [
 ]
 
 export const myProjects = [
-    {
+/*     {
         title:'mitro',
         subtitle:'', 
-        src:'https://mitro.com.pl/#/', 
+        //src:'https://mitro.com.pl/#/', 
         description:'Strona internetowa firmy remontowo-budowlanej', 
         srcCode:'https://github.com/piotr-t/MITRO', 
         page:'https://mitro.com.pl'
-    },
+    }, */
     //{
       //  title:'test',
       //  subtitle:'', 
@@ -22,13 +22,13 @@ export const myProjects = [
       //  description:'', 
       //  srcCode:''
     //},
-    {
+   /*  {
         title:'cnc simulator',
         subtitle:'', 
-        src:'http://piotrt.ct8.pl', 
+        //src:'http://piotrt.ct8.pl', 
         description:'Example project of cnc simulator', 
         srcCode:'https://github.com/piotr-t/cv'
-    },
+    }, */
   ]
 
   export const asideIcons = [

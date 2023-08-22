@@ -36,6 +36,6 @@
         </div>
     </div>
     <app-skils AsideIcons AsideIconsTop="300" AsideIcons="1" [attr.id]="getSectionID(0)" class="row"></app-skils>
-    <app-projects AsideIcons AsideIconsTop="300" AsideIcons="2" [attr.id]="getSectionID(1)" class="row"></app-projects>
+    <app-projects *ngIf="articles.length" AsideIcons AsideIconsTop="300" AsideIcons="2" [attr.id]="getSectionID(1)" class="row"></app-projects>
 </main>
 
